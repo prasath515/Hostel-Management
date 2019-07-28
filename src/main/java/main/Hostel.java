@@ -45,12 +45,11 @@ public class Hostel{
 		               if(splited[0].equals(name))
 		               {
 		            	   return true;
-		               }
-		               
-	               }
-	               
-	               
-	            }catch(Exception e){
+		               }		               
+	               }        	               
+	            }
+		   catch(Exception e)
+		    {
 	                System.out.println(e);
 	            }
 			return false;
@@ -80,9 +79,11 @@ public class Hostel{
                         return false;
                     }
                 }
-            }catch(Exception e){
-                System.out.println(e);
             }
+	       catch(Exception e)
+	       {
+                System.out.println(e);
+               }
             return true;
         }
            
@@ -92,10 +93,8 @@ public class Hostel{
     	   //write your code here
     	   chk = readData(name);
     	   return chk;
-        }
-        
-
-		static String typeName(){
+       }
+            static String typeName(){
             Scanner sc = new Scanner(System.in);
             String name;
             System.out.println("Enter the student name:(Type exit to exit) ");
